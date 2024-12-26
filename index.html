@@ -83,6 +83,7 @@
 		</div>
 		<!-- SWEETALERT2 -->
 		<div id="sweetAlert2">
+			<hr>
 			<h1 class="text-center">SweetAlert2</h1>
 			<div class="button-wrapper">
 				<button class="button-3 m-2" role="button" onclick="callAlert('Success!', 'Your operation was successful!')">Success (Alert)</button>
@@ -125,19 +126,25 @@
 		<div class="lazyLoad mx-3">
 			<hr>
 			<h1 class="text-center">LazyLoad</h1>
-			<?php
-				// load 50 random images
-				for($x = 0 ; $x <50; $x++){
-					// API to load a random image
-					echo '<img alt="A lazy image" class="lazy" data-src="https://picsum.photos/200/300?random='. $x . '.webp""/> <br>';
-				}
-			?>
+			<div id="lazyLoad-img"></div>
 		</div>
 	</body>
 </hmtl>
 
 <!-- LazyLoad SCRIPT -->
 <script>
+	//Load 50 random image onto lazyLoad-img
+	document.addEventListener('DOMContentLoaded', function () {
+		const container = document.getElementById('lazyLoad-img'); // Get the container
+		for (let x = 0; x < 50; x++) {
+			const img = document.createElement('img'); // Create an img element
+			img.alt = 'A lazy image'; // Set alt attribute
+			img.className = 'lazy'; // Add lazy class for LazyLoad
+			img.setAttribute('data-src', `https://picsum.photos/200/300?random=${x}`); // Set data-src attribute
+			container.appendChild(img); // Append to the container
+			container.appendChild(document.createElement('br')); // Add a line break
+		}
+	});
 	document.addEventListener('DOMContentLoaded', function() {
 		const lazyLoadInstance = new LazyLoad({
 			elements_selector: ".lazy",  // Lazy-load elements with the class "lazy"
