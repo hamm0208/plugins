@@ -1,135 +1,142 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<!-- SwiperJS -->
-<link rel="stylesheet" href="swiperJS/node_modules/swiper/swiper-bundle.min.css">
-<script src="swiperJS/node_modules/swiper/swiper-bundle.min.js"></script>
-
-<!-- SweetAlert2 -->
-<link rel="stylesheet" href="sweetAlert2/dist/sweetalert2.min.css">
-<script src="sweetAlert2/dist/sweetalert2.min.js"></script>
-
-<!-- LazyLoad -->
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@latest/dist/lazyload.min.js"></script>
-
-<!-- Body tag is compulsory to include the button -->
-<body>
-	<!-- SWIPERJS -->
-	<div id="swiperJS">
-		<h1 class="text-center">SwiperJS</h1>
-		<div class="creativeEffect">
-			<p class="text-center mb-1">Sliding (Creative Effect)</p>
-			<div class="swiper Swiper1 mx-5">
-				<div class="swiper-wrapper h-25">
-					<div class="swiper-slide text-white p-3 bg-success"> Slide 1 </div>
-					<div class="swiper-slide text-white p-3 bg-danger "> Slide 2 </div>
-					<div class="swiper-slide text-white p-3 bg-primary"> Slide 3 </div>
-					<div class="swiper-slide text-white p-3 bg-info"> Slide 4 </div>
-					<div class="swiper-slide text-white p-3 bg-warning"> Slide 5 </div>
+<!DOCTYPE hmtl>
+<hmtl lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SwiperJS, SweetAlert2, and LazyLoad Demo</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<!-- SwiperJS -->
+		<link rel="stylesheet" href="swiperJS/node_modules/swiper/swiper-bundle.min.css">
+		<script src="swiperJS/node_modules/swiper/swiper-bundle.min.js"></script>
+		
+		<!-- SweetAlert2 -->
+		<link rel="stylesheet" href="sweetAlert2/dist/sweetalert2.min.css">
+		<script src="sweetAlert2/dist/sweetalert2.min.js"></script>
+		
+		<!-- LazyLoad -->
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@latest/dist/lazyload.min.js"></script>
+	</head>
+	<body>
+		<!-- SWIPERJS -->
+		<div id="swiperJS">
+			<h1 class="text-center">SwiperJS</h1>
+			<div class="creativeEffect">
+				<p class="text-center mb-1">Sliding (Creative Effect)</p>
+				<div class="swiper Swiper1 mx-5">
+					<div class="swiper-wrapper h-25">
+						<div class="swiper-slide text-white p-3 bg-success"> Slide 1 </div>
+						<div class="swiper-slide text-white p-3 bg-danger "> Slide 2 </div>
+						<div class="swiper-slide text-white p-3 bg-primary"> Slide 3 </div>
+						<div class="swiper-slide text-white p-3 bg-info"> Slide 4 </div>
+						<div class="swiper-slide text-white p-3 bg-warning"> Slide 5 </div>
+						<div class="swiper-pagination swiper-pagination-1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="scrollBar border my-3">
+				<p class="text-center mb-1">Mousewheel control</p>
+				<div class="swiper Swiper2 mx-5">
+					<div class="swiper-wrapper h-25">
+						<div class="swiper-slide text-white p-3 bg-success">Slide 1</div>
+						<div class="swiper-slide text-white p-3 bg-danger">Slide 2</div>
+						<div class="swiper-slide text-white p-3 bg-primary">Slide 3</div>
+						<div class="swiper-slide text-white p-3 bg-info">Slide 4</div>
+						<div class="swiper-slide text-white p-3 bg-warning">Slide 5</div>
+					</div>
 					<div class="swiper-pagination swiper-pagination-1"></div>
 				</div>
 			</div>
-		</div>
-		<div class="scrollBar border my-3">
-			<p class="text-center mb-1">Mousewheel control</p>
-			<div class="swiper Swiper2 mx-5">
-				<div class="swiper-wrapper h-25">
-					<div class="swiper-slide text-white p-3 bg-success">Slide 1</div>
-					<div class="swiper-slide text-white p-3 bg-danger">Slide 2</div>
-					<div class="swiper-slide text-white p-3 bg-primary">Slide 3</div>
-					<div class="swiper-slide text-white p-3 bg-info">Slide 4</div>
-					<div class="swiper-slide text-white p-3 bg-warning">Slide 5</div>
+			<div class="freeScroll border my-3">
+				<p class="text-center">FreeScroll</p>
+				<div class="swiper Swiper3 p-3">
+					<div class="swiper-wrapper h-25 mb-1">
+						<div class="swiper-slide p-3 bg-success">Slide 1</div>
+						<div class="swiper-slide p-3 bg-danger">Slide 2</div>
+						<div class="swiper-slide p-3 bg-primary">Slide 3</div>
+						<div class="swiper-slide p-3 bg-primary">Slide 4</div>
+						<div class="swiper-slide p-3 bg-info">Slide 5</div>
+						<div class="swiper-slide p-3 bg-warning">Slide 6</div>
+						<div class="swiper-slide p-3 bg-primary">Slide 7</div>
+						<div class="swiper-slide p-3 bg-info">Slide 8</div>
+						<div class="swiper-slide p-3 bg-warning">Slide 9</div>
+					</div>
+					<div class="swiper-pagination "></div>
 				</div>
-				<div class="swiper-pagination swiper-pagination-1"></div>
+			</div>
+			<div>
+				<p class="text-center">Pagination (Fraction)</p>
+				<div class="swiper Swiper4 p-5">
+					<div class="swiper-wrapper h-25 mb-1">
+						<div class="swiper-slide bg-success text-white d-flex justify-content-center align-items-center">Slide 1</div>
+						<div class="swiper-slide bg-danger text-white d-flex justify-content-center align-items-center">Slide 2</div>
+						<div class="swiper-slide bg-primary text-white d-flex justify-content-center align-items-center">Slide 3</div>
+						<div class="swiper-slide bg-info text-white d-flex justify-content-center align-items-center">Slide 4</div>
+						<div class="swiper-slide bg-warning text-white d-flex justify-content-center align-items-center">Slide 5</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 		</div>
-		<div class="freeScroll border my-3">
-			<p class="text-center">FreeScroll</p>
-			<div class="swiper Swiper3 p-3">
-				<div class="swiper-wrapper h-25 mb-1">
-					<div class="swiper-slide p-3 bg-success">Slide 1</div>
-					<div class="swiper-slide p-3 bg-danger">Slide 2</div>
-					<div class="swiper-slide p-3 bg-primary">Slide 3</div>
-					<div class="swiper-slide p-3 bg-primary">Slide 4</div>
-					<div class="swiper-slide p-3 bg-info">Slide 5</div>
-					<div class="swiper-slide p-3 bg-warning">Slide 6</div>
-					<div class="swiper-slide p-3 bg-primary">Slide 7</div>
-					<div class="swiper-slide p-3 bg-info">Slide 8</div>
-					<div class="swiper-slide p-3 bg-warning">Slide 9</div>
-				</div>
-				<div class="swiper-pagination "></div>
-			</div>
-		</div>
-		<div>
-			<p class="text-center">Pagination (Fraction)</p>
-			<div class="swiper Swiper4 p-5">
-				<div class="swiper-wrapper h-25 mb-1">
-					<div class="swiper-slide bg-success text-white d-flex justify-content-center align-items-center">Slide 1</div>
-					<div class="swiper-slide bg-danger text-white d-flex justify-content-center align-items-center">Slide 2</div>
-					<div class="swiper-slide bg-primary text-white d-flex justify-content-center align-items-center">Slide 3</div>
-					<div class="swiper-slide bg-info text-white d-flex justify-content-center align-items-center">Slide 4</div>
-					<div class="swiper-slide bg-warning text-white d-flex justify-content-center align-items-center">Slide 5</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
-	</div>
-	<!-- SWEETALERT2 -->
-	<div id="sweetAlert2">
-		<h1 class="text-center">SweetAlert2</h1>
-		<div class="button-wrapper">
-			<button class="button-3 m-2" role="button" onclick="callAlert('Success!', 'Your operation was successful!')">Success (Alert)</button>
+		<!-- SWEETALERT2 -->
+		<div id="sweetAlert2">
+			<h1 class="text-center">SweetAlert2</h1>
+			<div class="button-wrapper">
+				<button class="button-3 m-2" role="button" onclick="callAlert('Success!', 'Your operation was successful!')">Success (Alert)</button>
 
-			<button class="button-3 m-2" role="button" onclick="callToast('Log in Successfully', {timerProgressBar: true}, '', 'success')">Log In Success (Notification)</button>
+				<button class="button-3 m-2" role="button" onclick="callToast('Log in Successfully', {timerProgressBar: true}, '', 'success')">Log In Success (Notification)</button>
 
-			<button class="button-3 m-2 bg-danger" role="button" onclick="callAlert('Error', 'Your operation was unsuccessful', {}, 'error', 'Please try again!')">Error (Alert)</button>
+				<button class="button-3 m-2 bg-danger" role="button" onclick="callAlert('Error', 'Your operation was unsuccessful', {}, 'error', 'Please try again!')">Error (Alert)</button>
 
-			<button class="button-3 m-2 bg-danger" role="button" onclick="callToast('Log in Unsuccessful', {timerProgressBar: true}, 'Error', 'error', 'top-end', 2000)">Log In Unsuccessful (Notification)</button>
+				<button class="button-3 m-2 bg-danger" role="button" onclick="callToast('Log in Unsuccessful', {timerProgressBar: true}, 'Error', 'error', 'top-end', 2000)">Log In Unsuccessful (Notification)</button>
 
-			<button class="button-3 m-2 bg-warning" role="button" onclick="callAlert('Rick Rolled', 'Operation Rick Rolled was successful!', {
-				imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlF0OurUW4CHieL8hpfOneliqJuqPZH5io5A&s',
-				imageAlt: 'Rick Rolled'
-				})">
-				Rick Rolled (Image)
-			</button>
+				<button class="button-3 m-2 bg-warning" role="button" onclick="callAlert('Rick Rolled', 'Operation Rick Rolled was successful!', {
+					imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlF0OurUW4CHieL8hpfOneliqJuqPZH5io5A&s',
+					imageAlt: 'Rick Rolled'
+					})">
+					Rick Rolled (Image)
+				</button>
 
-			<button class="button-3 m-2 bg-danger" role="button" onclick="callAlert('Are you sure?','You won\'t be able to revert this!',
-				{
-					showCancelButton: true,
-					cancelButtonColor: '#d33',
-					confirmButtonColor: '#2C974B'
-				},
-				'warning',
-				'Yes, delete this!',
-				// Depending on what the user click, it will show different alerts
-				(result) => {
-					if (result.isConfirmed) {
-						callAlert('Deleted!', 'Your file has been deleted.', {}, 'success', 'Okay!');
-					} else {
-						callAlert('Cancelled!', 'Your file was not deleted.', {}, 'error', 'Okay!');
+				<button class="button-3 m-2 bg-danger" role="button" onclick="callAlert('Are you sure?','You won\'t be able to revert this!',
+					{
+						showCancelButton: true,
+						cancelButtonColor: '#d33',
+						confirmButtonColor: '#2C974B'
+					},
+					'warning',
+					'Yes, delete this!',
+					// Depending on what the user click, it will show different alerts
+					(result) => {
+						if (result.isConfirmed) {
+							callAlert('Deleted!', 'Your file has been deleted.', {}, 'success', 'Okay!');
+						} else {
+							callAlert('Cancelled!', 'Your file was not deleted.', {}, 'error', 'Okay!');
+						}
 					}
-				}
-			)">
-				Are you sure?? (Nested Alert)
-			</button>
+				)">
+					Are you sure?? (Nested Alert)
+				</button>
+			</div>
 		</div>
-	</div>
-	<!-- LAZYLOAD -->
-	<div class="lazyLoad mx-3">
-		<hr>
-		<h1 class="text-center">LazyLoad</h1>
-		<?php
-			// load 50 random images
-			for($x = 0 ; $x <50; $x++){
-				// API to load a random image
-				echo '<img alt="A lazy image" class="lazy" data-src="https://picsum.photos/200/300?random='. $x . '.webp""/> <br>';
-			}
-		?>
-	</div>
-</body>
+		<!-- LAZYLOAD -->
+		<div class="lazyLoad mx-3">
+			<hr>
+			<h1 class="text-center">LazyLoad</h1>
+			<?php
+				// load 50 random images
+				for($x = 0 ; $x <50; $x++){
+					// API to load a random image
+					echo '<img alt="A lazy image" class="lazy" data-src="https://picsum.photos/200/300?random='. $x . '.webp""/> <br>';
+				}
+			?>
+		</div>
+	</body>
+</hmtl>
 
-	<!-- LazyLoad SCRIPT -->
+<!-- LazyLoad SCRIPT -->
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
 		const lazyLoadInstance = new LazyLoad({
